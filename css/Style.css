@@ -1,0 +1,632 @@
+@import url('../css/fonts.css');
+
+
+html,
+body {
+    margin: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: url('../assets/1651866259307.jpg') no-repeat;
+    background-size: cover;
+}
+
+
+/* ---------------- Global Classes ---------------*/
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-family: 'Lexend', cursive;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: 'Lexend', cursive;
+}
+
+h3 ,h4 {
+    font-family: 'Abel', cursive;
+}
+
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: 'Livvic', cursive;
+    cursor: pointer;
+}
+
+span {
+    font-family: 'Abel', cursive;
+}
+
+.container {
+    margin: 0 5vw;
+}
+
+.text-gray {
+    color: #ffffff;
+    font-size: 100px;
+}
+
+p {
+    font-family: 'Lexend', cursive;
+    color: white;
+}
+
+/* ------x------- Global Classes -------x-------*/
+
+/* --------------- navbar ----------------- */
+
+.nav {
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu {
+    justify-content: space-between;
+}
+
+.nav .toggle-collapse {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-collapse .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-collapse .toggle-icons i {
+    font-size: 1.4rem;
+    color: #3f4954;
+}
+
+.collapse {
+    height: 30rem;
+}
+
+.nav .nav-items {
+    display: flex;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link {
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+    font-family: 'Livvic',cursive;
+    font-size: 1.1rem;
+}
+
+.nav .nav-items .nav-link a:hover {
+    color: rgb(78, 106, 117);
+}
+
+
+.nav .nav-brand a {
+    font-size: 50px;
+    display: block;
+    font-family: 'Lexend', cursive;
+}
+
+.nav .social {
+    padding: 1.4rem 0;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.nav .social i {
+    padding: 0 .2rem;
+}
+
+.nav .social i:hover {
+    color: #a1c4cf;
+}
+
+/* -------x------- navbar ---------x------- */
+
+
+/* ----------------- Main Content----------- */
+
+/* --------------- Site title ---------------- */
+main .site-title {
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background {
+    padding-top: 10rem;
+    text-align: center;
+    color: white;
+}
+
+main .site-title h1,
+h3 {
+    margin: .3rem;
+}
+
+main .site-title .btn {
+    margin: 1.8rem;
+    background: linear-gradient(120deg, #a1fdf8 0%, #fbf5c2 100%);
+}
+
+main .site-title .btn:hover {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+/* --------x------ Site title --------x------- */
+
+/* --------------- Project Carousel ------------ */
+
+main .project {
+    height: 100vh;
+    width: 100%;
+    background-size: 65%;
+}
+
+main .project .project-post {
+    padding-top: 6rem;
+}
+
+main .project-post .project-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 3rem 2rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+main .project-content .project-title {
+    padding: 2rem 0;
+    color: rgb(48, 48, 48);
+}
+
+main .project-content .btn-project  {
+    background: linear-gradient(120deg, #a1fdf8 0%, #fbf5c2 100%);
+    padding: .7rem 2rem;
+    margin: .5rem;
+    font-weight: 800;
+}
+main .project-content .btn-project:hover {
+    background:linear-gradient(120deg, #fbf5c2 0%, #a1fdf8 100%);
+}
+
+main .project-content span {
+    display: block;
+}
+
+section .container .owl-nav {
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next {
+    color: whitesmoke;
+    background: transparent;
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: transparent;
+    color: #332f01;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+    outline: none;
+}
+
+
+/* -------x------- Blog Carousel -----x------ */
+
+
+/* -------x------- About -----x------ */
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.background-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+}
+
+.bg-1 {
+    flex: 1;
+}
+
+.bg-2 {
+    flex: 1;
+}
+
+.about-container {
+    width: 85%;
+    min-height: 80vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    width: 500px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.text-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 22px;
+}
+
+.text-container h1 {
+    font-size: 70px;
+    padding: 20px 0px;
+}
+
+.text-container p .name , .job {
+    background-color: #0c0c0c;
+    padding: 4px;
+}
+.text-container p .name:hover , .job:hover {
+    background-color: #fff;
+    color: #000;
+    padding: 4px;
+}
+
+.text-container b ,.text-container i{
+    text-decoration: none;
+    padding: 1px;
+    margin: 50px 0px;
+    border: 2px solid transparent;
+    color: rgba(0, 0, 0, 0.87);
+    border-radius: 5px;
+    transition: .3s all ease;
+}
+
+.text-container b:hover {
+    color: white;
+    border: 2px solid rebeccapurple;
+    background-color: rebeccapurple;
+}
+.text-container i:hover {
+    color: white;
+    border: 2px solid orangered;
+    background-color: orangered;
+}
+
+/* -------x------- About -----x------ */
+
+/* ------------- Contact ------------ */
+.Contact {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+.Contact h1 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+.contact-wrap {
+	width: 50%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contact-in {
+	padding: 40px 30px;
+}
+
+.contact-in:nth-child(1) {
+	flex: 30%;
+	background: rgba(255, 255, 255, 0.205);
+	color: #fff;
+}
+
+.contact-in:nth-child(2) {
+	flex: 45%;
+	background: #ffffff60;
+}
+
+.contact-in:nth-child(3) {
+	flex: 25%;
+	padding: 0;
+}
+
+.contact-in h1 {
+	font-size: 24px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.contact-in h2 {
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+.contact-in h2 i {
+	font-size: 16px;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	background: #f5f5f5;
+	color: #000;
+	border-radius: 50px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.contact-in p {
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.contact-in ul {
+	padding: 0;
+	margin: 0;
+}
+
+.contact-in ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 5px;
+	margin-top: 5px;
+}
+
+.contact-in ul li a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	background: #fff;
+	border-radius: 50px;
+}
+
+.contact-in ul li a i {
+	font-size: 14px;
+	line-height: 30px;
+	color: #000;
+}
+
+.contact-in form {
+	width: 100%;
+	height: auto;
+}
+
+.contact-in-input {
+	width: 100%;
+	height: 40px;
+	margin-bottom: 20px;
+	border: 1px solid #fff;
+	outline: none;
+	padding-left: 5px;
+	background: transparent;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact-in-input::placeholder {
+	color: #fff;
+}
+
+.contact-in-textarea {
+	width: 100%;
+	height: 140px;
+	margin-bottom: 20px;
+	border: 1px solid #fff;
+	outline: none;
+	padding-top: 5px;
+	padding-left: 5px;
+	background: transparent;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+}
+
+.contact-in-textarea::placeholder {
+	color: #fff;
+}
+
+.contact-in-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+	width: 100px;
+	height: 40px;
+	border: 1px solid #fff;
+	outline: none;
+	background: transparent;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 300;
+	font-family: 'Poppins', sans-serif;
+	cursor: pointer;
+}
+
+.contact-in iframe {
+	width: 100%;
+	height: 100%;
+}
+.send {
+    background: linear-gradient(120deg, #a1fdf8 0%, #fbf5c2 100%);
+    color: #000;
+    font-weight: 800;
+    border-radius: 40px;
+}
+.send:hover {
+    background: linear-gradient(120deg, #fbf5c2 0%,#a1fdf8 100%);
+
+}
+
+/* ------------- Contact ------------ */
+
+
+/* ------------- footer ------------ */
+footer h4 {
+    color: rgb(12, 1, 24);
+    text-align: center;
+}
+/* ------------- footer ------------ */
+
+
+/* ----------------------- media query ---------------------- */
+
+/* --------------- NavBar -------------- */
+
+@media only screen and (max-width: 750px) {
+
+    .nav .nav-menu,
+    .nav .nav-items {
+        flex-direction: column;
+    }
+
+    .nav .toggle-collapse {
+        display: initial;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    main .project {
+        height: 125vh;
+    }
+
+    nav .toggle-collapse {
+        width: 80% !important;
+    }
+
+}
+
+/* --------------- NavBar -------------- */
+
+/* --------------- About -------------- */
+@media screen and (max-width: 1600px) {
+    .about-container {
+        width: 90%;
+    }
+
+    .image-container img {
+        width: 400px;
+        height: 282px;
+    }
+
+    .text-container h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .image-container img {
+        width: 300px;
+        height: 212px;
+    }
+
+    .text-container {
+        align-items: center;
+    }
+}
+
+/* --------------- About -------------- */
+
+/* --------------- Contact -------------- */
+@media (max-width:820px){
+    .contact-wrap {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width:480px) {
+	.contact-in:nth-child(1) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(2) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(3) {
+		flex: 100%;
+	}
+
+}
+
+@media only screen and (max-width:360px) {
+	.contact-in:nth-child(1) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(2) {
+		flex: 50%;
+	}
+
+	.contact-in:nth-child(3) {
+		flex: 100%;
+	}
+
+}
+
+/* --------------- Contact -------------- */
+
+
+
+/* ------------- media query ------------ */
